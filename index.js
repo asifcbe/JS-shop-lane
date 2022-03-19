@@ -31,11 +31,12 @@ $(function() {
                         accessoriesHTML += `<div class="card">
                             <a href="./details.html?id=${res[i].id}">
                             <img src="${res[i].preview}" alt="${res[i].name}">
-                            </a>
+                           
                             <div id="productDetails">
                                 <h4>${res[i].name}</h3>
                                 <h5>${res[i].brand}</h5>
                                 <p>${res[i].price}</p>
+                                 </a>
                             </div>
                         </div>`;
                     }else{
