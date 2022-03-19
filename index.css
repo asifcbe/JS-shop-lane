@@ -1,0 +1,440 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 120px;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption Info */
+.Info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Worknumbering (1/3 etc) */
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+main{
+    margin-top: 6em;
+
+}
+
+/* The circles or bullets and indicators */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: #acc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+  background-color: #717161;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+footer {
+    width: 100%;
+    background-color: #1c1b1e; 
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 4% 8%;
+ }
+ 
+ footer > div {
+     padding-left: 60px;
+     padding-right: 60px;
+ }
+ 
+ footer > div:first-of-type {
+     padding-left: 0;
+ }
+ footer{
+     margin-top: 100px;
+ }
+ 
+ .footer-heading {
+     text-transform: uppercase;
+     font-weight: 600;
+     font-size: 16px;
+     color: white;
+     opacity: 0.9;
+     letter-spacing: 1px;
+ }
+ 
+ .footer-link {
+     text-decoration: none;
+     color: white;
+     display: block;
+     margin-top: 12px;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     font-size: 14px;
+     opacity: 0.8;
+ }
+
+
+body{
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+#header{
+
+    box-shadow: 0px 1px 5px grey;
+
+}
+#navBar{
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    box-shadow: 0px 1px 5px grey;
+    padding: 0px 8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    z-index: 10;
+}
+#leftNav{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#rightNav > img{
+  
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+   
+}
+#rightNav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ClothingCards{
+    display: grid;
+    grid-template-columns: 19% 19% 19% 19% 19%;
+    grid-column-gap: 1.25%;
+}
+#AccessoriesCards{
+    display: grid;
+    grid-template-columns: 19% 19% 19% 19% 19%;
+    grid-column-gap: 1.25%;
+}
+.card img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+#main-container{
+    padding: 0px 8rem;
+}
+.card{
+    box-shadow: 1px 1px 5px #cfbdbd;
+    border-radius: 5px;
+}
+.aTag{
+    text-decoration: unset;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-right: 3rem;
+    color: black;
+}
+.aTag span:first-child{
+    font-weight: 900;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#addCartCount{
+    background-color: #009688;
+    padding: 0rem 0.3rem;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    top: -11px;
+    right: 10px;
+}
+#productDetails{
+    padding: 0rem 1rem;
+}
+#productDetails h4{
+    font-weight: 600;
+    margin: 0px;
+    font-size: 16px;
+}
+#productDetails h5{
+    margin: 12px 0px;
+}
+#productDetails p{
+    margin: 12px 0px;
+    color: #009688;
+    font-size: 15px;
+    font-weight: 600;
+}
+#Accessories{
+    margin-top: 4rem;
+}
+#Clothing{
+    margin-top: 8rem;
+}
+
+
+
+
+#main-detail-container{
+    display: grid;
+
+    grid-template-columns: 30% 50%;
+    justify-content: center;
+    height: 100%;
+    padding: 0px 8rem;
+    font-family: "Montserrat", sans-serif;
+}
+#main-image-section{
+    width: 100%;
+    
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+}
+#product-detail-wrapper{
+    width: 100%;
+    
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.previewImage{
+    display: flex;
+    justify-content: left;
+    height: 130px;
+}
+.thumbail{
+    height: 100%;
+    margin-right: 20px;
+    border-radius: 6px;
+    padding: 3px;
+}
+#name{
+    font-weight: 300;
+font-size: 44px;
+letter-spacing: -2px;
+margin-top: 0px;
+}
+#brand{
+    margin-top: 20px;
+font-weight: 200;
+font-size: 20px;
+letter-spacing: 1px;
+color: rgb(27, 25, 25);
+}
+#price{
+    color: #009688;
+font-weight: bold;
+}
+#description{
+    margin-top: 20px;
+font-size: 16px;
+font-weight: 300;
+color: #86939e;
+}
+
+#product-detail-wrapper h3{
+    margin-top: 20px;
+font-weight: 200;
+font-size: 20px;
+letter-spacing: 1px;
+color: rgb(27, 25, 25);
+}
+#main-image{
+
+    width:100%;
+}
+.active{
+    border: 2px solid #009688;
+}
+
+@media (max-width:500px) {
+    #main-container{
+        grid-template-columns: 100%;
+        justify-content: left;
+    }
+    .previewImage{
+        width: 100%;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+    }
+}
+@media(min-width:500px) and (max-width:850px){
+    #main-container{
+        grid-template-columns: 50% 50%;
+    }
+    .previewImage{
+        width: 100%;
+       white-space: nowrap;
+       overflow-x: auto;
+       overflow-y: hidden;
+       scroll-behavior: smooth;
+   }
+}
+
+#main-addToCart-container{
+    padding: 0px 8rem;
+}
+#addToCartDiv{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 3.90%;
+}
+#addToCardItem{
+    box-shadow: 1px 1px 5px #b1a5a5;
+    display: flex;
+    justify-content: start;
+    box-sizing: border-box;
+    align-items: center;
+    margin-bottom: 0.7rem;
+    border-radius: 5px;
+}
+#totalAmount{
+    box-shadow: 1px 1px 5px #b1a5a5;
+    max-height: 132px;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.checkoutItemImg{
+    border-radius: 6px;
+    padding: 0px 1rem;
+    width: 100px;
+}
+
+#profile-pic{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+#profile-pic span{
+    margin-top: 11px;
+    display: inline-block;
+}
+
+#main-order-container{
+    padding: 0px 8rem;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.orderSuccessMsg{
+    letter-spacing:2px;
+}
+small{
+    letter-spacing: 0.3px;
+}
+.successIcon{
+    text-align: center;
+    color: green;
+}
+#placeOrder{
+    height: 50px;
+    background-color: #009688;
+    color: white;
+    font-size: larger;
+    border-radius: 10px;
+
+
+
+
+}
+#addToCart{
+    margin-top: 15px;
+    height: 50px;
+    background-color: #009688;
+    color: white;
+    font-size: larger;
+    border-radius: 10px;
+
+
+
+}
